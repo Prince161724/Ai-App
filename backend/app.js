@@ -101,6 +101,10 @@ app.delete('/delete', async (req, res) => {
   }
 });
 
+app.get('/health',(req,res)=>{
+return res.json({status:"ok",uptime:process.uptime()})
+})
+
 app.listen(port, () => {
   console.log(`Running on Port ${port}`);
 });
