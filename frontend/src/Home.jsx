@@ -38,7 +38,8 @@ function Home() {
           body: formData
         }
       );
-
+  
+      console.log("Uploaded File");    
       const res = await response.json();
       
       if (res.success) {
