@@ -9,8 +9,10 @@ yarn-error.log*
 .env.local
 .env.production
 
-# Uploads (optional - you might want to keep this for local dev)
-uploads/
+# Uploads - keep directory structure but ignore uploaded files
+backend/uploads/pdfs/*
+!backend/uploads/pdfs/.gitkeep
+frontend/uploads/*
 
 # OS files
 .DS_Store

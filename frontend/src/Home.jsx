@@ -46,7 +46,7 @@ function Home() {
         alert('Uploaded PDF!  Now you can ask questions');
         
         // Delete local file
-        await fetch(`https://backend-ai-w92s.onrender.com/delete`, {
+        fetch(`https://backend-ai-w92s.onrender.com/delete`, {
           method: "DELETE",
           headers: {
             'Content-Type': 'application/json'
