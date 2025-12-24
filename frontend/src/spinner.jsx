@@ -1,0 +1,12 @@
+import './spinner.css'
+
+
+function Spinner(){
+    return(
+        <div className="loader-wrapper">
+        <span className="loader"></span>
+        </div>
+    )
+}
+
+export default Spinner
